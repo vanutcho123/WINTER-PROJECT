@@ -1,0 +1,64 @@
+.member {
+  padding: 110px 0 80px;
+  overflow: hidden;
+  &-item {
+    text-align: center;
+    position: relative;
+  }
+  &-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 29px;
+    text-align: center;
+    img {
+      max-width: 144px;
+      max-height: 144px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+  &-info {
+    margin: 0 100px;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    color: $color-member-info;
+  }
+  &-name {
+    color: $color-member-name;
+    display: block;
+    margin: 8px 0 0;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    line-height: 2.625em;
+  }
+  // button slider
+  .owl-dots {
+    display: none;
+  }
+  .owl-nav span {
+    color: $primary-color;
+    font-size: 70px;
+    border-radius: 30%;
+    border: none;
+    margin: 0;
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 999;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none;
+    color: none;
+    text-decoration: none;
+  }
+}

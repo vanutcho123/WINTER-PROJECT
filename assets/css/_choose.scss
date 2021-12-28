@@ -1,0 +1,65 @@
+.choose {
+  margin: 120px 0;
+  overflow: hidden;
+  &-main {
+    display: block;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 70px 0;
+  }
+  &-item {
+    position: relative;
+    overflow: hidden;
+    max-width: 25%;
+    background: rgba($color: #000000, $alpha: 0.6);
+    &:hover .choose-img {
+      transform: scale(1.05);
+      opacity: 0.7;
+    }
+  }
+  &-img {
+    background: #000;
+    opacity: 0.9;
+    width: 252px;
+    height: 252px;
+    transform: scale(1);
+    transition: transform ease 1s, opacity ease-in-out 0.3s;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-content {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    color: $bg-header-bot;
+  }
+  &-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    gap: 5px;
+  }
+  &-price {
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-greeting {
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+.reviews {
+  background: url(../images/reviews/h1-parallax-img-2.jpg) no-repeat;
+  background-position: 50%;
+  padding: 105px 0;
+  background-attachment: fixed;
+  overflow: hidden;
+  .content-heading {
+    color: $clr-reviews-heading;
+    padding-bottom: 65px;
+  }
+  .content-tagline {
+    color: $clr-reviews-heading;
+  }
+  &-item {
+    display: block;
+    background: $-bg-reviews-item;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  &-content {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+  }
+  &-img {
+    max-width: 110px;
+    max-height: 110px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: $clr-reviews-title;
+    letter-spacing: 0.5px;
+  }
+  &-star {
+    i {
+      font-size: 14px;
+      color: $primary-color;
+    }
+  }
+  &-desc {
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  &-name {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+    margin: 0 7px;
+    background: $primary-color;
+    display: block;
+  }
+  .owl-nav {
+    visibility: hidden;
+  }
+}

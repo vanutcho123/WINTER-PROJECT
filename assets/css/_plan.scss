@@ -1,0 +1,85 @@
+.plan {
+  background: $bg-plan;
+  padding: 130px 0 110px;
+  &-main {
+    margin-top: 70px;
+  }
+  &-item {
+    margin-right: 5px;
+    border: 1px solid;
+    overflow: hidden;
+  }
+  &-img {
+    width: 322.75px;
+    height: 190.7px;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  &-top-content {
+    background: $primary-color;
+    color: $color-plan-top-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    font-size: 14px;
+    i {
+      margin-right: 5px;
+    }
+  }
+  &-bot-content {
+    padding: 35px 25px;
+    background: $bg-plan-bot-content;
+    color: $color-plan-bot-content;
+  }
+  &-title {
+    font-size: 22px;
+  }
+  &-desc {
+    font-size: 14px;
+    margin: 20px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  &-price-and-rating {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .owl-nav {
+    visibility: hidden;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 13px;
+    height: 13px;
+    margin: 5px 7px;
+    background: $primary-color;
+    display: block;
+    transition: opacity 0.2s ease;
+    border-radius: 50%;
+  }
+  .owl-next span {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    font-size: 70px;
+    font-weight: 400;
+  }
+}

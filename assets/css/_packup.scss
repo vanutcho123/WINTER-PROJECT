@@ -1,0 +1,50 @@
+.packup {
+  padding: 100px 0;
+  &-main {
+    margin-top: 100px;
+  }
+  &-item {
+    border: 1px solid $primary-color;
+  }
+  &-img {
+    position: relative;
+  }
+  &-content {
+    padding: 20px 10px;
+  }
+  &-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: $clr-pack-up-name;
+  }
+  &-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 7px;
+  }
+  // button slider
+  .owl-dots {
+    display: none;
+  }
+  .owl-nav span {
+    color: $primary-color;
+    font-size: 70px;
+    border: none;
+    margin: 0;
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -70px;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 30%;
+    right: -70px;
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none;
+    color: none;
+    text-decoration: none;
+  }
+}
